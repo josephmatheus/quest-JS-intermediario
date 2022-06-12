@@ -52,6 +52,10 @@ main {
     position: relative;
 }
 
+.formulario input, .formulario textarea#mensagem:focus{
+    outline: 0;
+}
+
 .formulario .campo-obrigatorio {
     color: #F52E2E;
     font-size: 1rem;

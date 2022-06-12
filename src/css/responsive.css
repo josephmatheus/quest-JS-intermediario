@@ -1,0 +1,17 @@
+@media (max-width: 880px) {
+    body {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .texto p {
+        margin: 0 auto;
+    }
+
+    .formulario {
+        margin-top: 20px;
+    }
+}

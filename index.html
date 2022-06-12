@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio HTML/CSS/JS - Intermediário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="texto">
+        <h1>
+          FICOU COM DÚVIDA? <br />
+          NOS MANDE UMA MENSAGEM!
+        </h1>
+        <p>
+          Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+      <section class="formulario-content">
+        <form class="formulario" id="formulario">
+          <label for="nomeCompleto">
+            <input
+              type="text"
+              name="nomeCompleto"
+              id="nomeCompleto"
+              placeholder="Nome completo *"
+            />
+            <div class="campo-obrigatorio">campo obrigatorio</div>
+          </label>
+          <label for="email">
+            <input type="email" name="email" id="email" placeholder="Email *" />
+            <div class="campo-obrigatorio">campo obrigatorio</div>
+          </label>
+          <label for="telefone">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Telefone *"
+            />
+            <div class="campo-obrigatorio">campo obrigatorio</div>
+          </label>
+          <label for="mensagem">
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem *" maxlength="160"></textarea>
+            <div class="campo-obrigatorio">campo obrigatorio</div>
+          </label>
+          <p>*campos obrigatórios</p>
+          <button type="button" class="botao" onclick="enviarFormulario()">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
